@@ -1,0 +1,2540 @@
+/* embedded stylesheets from rijkswaterstaat.nl */
+@font-face {
+    font-family: 'icons';
+    src: url("https://staticresources.rijkswaterstaat.nl/assets/font/icons/icons.eot");
+    src: url("https://staticresources.rijkswaterstaat.nl/assets/font/icons/icons.eot?#iefix") format("embedded-opentype"), url("https://staticresources.rijkswaterstaat.nl/assets/font/icons/icons.woff") format("woff"), url("https://staticresources.rijkswaterstaat.nl/assets/font/icons/icons.ttf") format("truetype"), url("https://staticresources.rijkswaterstaat.nl/assets/font/icons/icons.svg#rws") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+.pin-werkzaamheden-yellow #icon-exclamation,
+.pin-werkzaamheden-yellow #icon-werkzaamheden {
+    fill: #222
+}
+
+.pin-werkzaamheden-yellow #background {
+    fill: #fff
+}
+
+.pin-werkzaamheden-orange #icon-exclamation,
+.pin-werkzaamheden-orange #icon-werkzaamheden {
+    fill: #222
+}
+
+.pin-werkzaamheden-orange #background {
+    fill: #fff
+}
+
+.pin-werkzaamheden-red #icon-exclamation,
+.pin-werkzaamheden-red #icon-werkzaamheden {
+    fill: #222
+}
+
+.pin-werkzaamheden-red #background {
+    fill: #fff
+}
+
+.pin-werkzaamheden-yellow #icon-exclamation,
+.pin-werkzaamheden-orange #icon-exclamation,
+.pin-werkzaamheden-red #icon-exclamation {
+    opacity: 0
+}
+
+.pin-werkzaamheden-yellow #border,
+.pin-werkzaamheden-yellow #arrow {
+    fill: #E0BA00
+}
+
+.pin-werkzaamheden-orange #border,
+.pin-werkzaamheden-orange #arrow {
+    fill: #E68600
+}
+
+.pin-werkzaamheden-red #border,
+.pin-werkzaamheden-red #arrow {
+    fill: #F02E2E
+}
+
+.pin-cluster .counterText {
+    fill: #fff;
+    font-family: "RijksoverheidSansText";
+    font-size: 14px;
+    font-weight: 700
+}
+
+.pin-cluster #icon-warning,
+.pin-cluster #icon-werkzaamheden {
+    fill: #fff
+}
+
+.pin-cluster #background {
+    fill: #E68600
+}
+
+#app-container .icon,
+.rws-widget .filter-form__header__title:before,
+.rws-widget .results__container.actueel .link__container a .text-btn:before,
+.rws-widget .map .map-expander span.map-collapsed-label:before,
+.rws-widget .map .map-expander span.map-expanded-label:before,
+.rws-widget .map .map-close-button:before,
+.rws-widget .DateRangePicker__PaginationArrowIcon--previous:before,
+.rws-widget .DateRangePicker__PaginationArrowIcon--next:before {
+    font-family: 'icons';
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased
+}
+
+#app-container [class^="icon-"]:before,
+#app-container [class*=" icon-"]:before {
+    text-decoration: inherit;
+    display: inline-block;
+    speak: none;
+    font-size: 16px
+}
+
+#app-container a [class^="icon-"],
+#app-container a [class*=" icon-"] {
+    display: inline-block
+}
+
+.icon-meldpuntincidenten:before,
+.icon-warning:before {
+    content: "\e628"
+}
+
+.icon-spitsverwachting:before {
+    content: "\e62d"
+}
+
+.icon-actueel:before,
+.rws-widget .results__container.actueel .link__container a .text-btn:before {
+    content: "\e623"
+}
+
+.icon-geocon-golf:before {
+    content: "\e624"
+}
+
+.icon-geocon-stroom:before {
+    content: "\e625"
+}
+
+.icon-geocon-wind:before {
+    content: "\e626"
+}
+
+.icon-geocon-temperatuur:before {
+    content: "\e627"
+}
+
+.icon-circled-min:before {
+    content: "\e629"
+}
+
+.icon-circled-plus:before {
+    content: "\e62a"
+}
+
+.icon-circled-question-mark:before {
+    content: "\e62b"
+}
+
+.icon-circled-cross:before,
+.rws-widget .map .map-close-button:before {
+    content: "\e62c";
+    font-size: 16px
+}
+
+.icon-chevron-left:before {
+    content: "\e600"
+}
+
+.icon-close-big:before {
+    content: "\d7"
+}
+
+.icon-chevron-right:before,
+.icon-internal:before {
+    content: "\2c3"
+}
+
+.icon-blog:before {
+    content: "\201d"
+}
+
+.icon-right:before,
+.rws-widget .DateRangePicker__PaginationArrowIcon--next:before,
+.icon-more:before,
+.icon-circled-arrow-right:before {
+    content: "\2023"
+}
+
+.icon-loading:before {
+    content: "\21ba"
+}
+
+.icon-volume-off:before {
+    content: "\2327"
+}
+
+.icon-info:before {
+    content: "\233d"
+}
+
+.icon-target:before {
+    content: "\2388"
+}
+
+.icon-up:before,
+.icon-circled-arrow-up:before,
+.icon-collapse:before {
+    content: "\25b4"
+}
+
+.icon-play-button:before {
+    content: "\25b7"
+}
+
+.icon-play:before {
+    content: "\25ba"
+}
+
+.icon-down:before,
+.icon-circled-arrow-down:before {
+    content: "\25be"
+}
+
+.icon-left:before,
+.rws-widget .DateRangePicker__PaginationArrowIcon--previous:before,
+.icon-circled-arrow-left:before {
+    content: "\25c0"
+}
+
+.icon-pause:before {
+    content: "\25fc"
+}
+
+.icon-menu:before {
+    content: "\2630"
+}
+
+.icon-volume-low:before {
+    content: "\2669"
+}
+
+.icon-volume-medium:before {
+    content: "\266b"
+}
+
+.icon-volume-on:before {
+    content: "\266c"
+}
+
+.icon-subtitle:before {
+    content: "\2689"
+}
+
+.icon-error:before {
+    content: "\26a0"
+}
+
+.icon-search:before {
+    content: "\26b2"
+}
+
+.icon-inpage:before,
+.icon-chevron-down:before,
+.rws-widget .map .map-expander span.map-collapsed-label:before,
+.rws-widget .map .map-expander span.map-expanded-label:before {
+    content: "\2713"
+}
+
+.icon-geotool:before {
+    content: "\27b4"
+}
+
+.icon-prev:before,
+.icon-arrow-left-big:before {
+    content: "\27e8"
+}
+
+.icon-next:before,
+.icon-arrow-right-big:before {
+    content: "\27e9"
+}
+
+.icon-expand:before {
+    content: "\2922"
+}
+
+.icon-external:before,
+.icon-export:before {
+    content: "\2924"
+}
+
+.icon-mail:before {
+    content: "\2b12"
+}
+
+.icon-facebook:before {
+    content: "\e005"
+}
+
+.icon-linkedin:before {
+    content: "\e006"
+}
+
+.icon-youtube:before {
+    content: "\e007"
+}
+
+.icon-twitter:before {
+    content: "\e008"
+}
+
+.icon-werkzaamheden:before,
+.rws-widget .filter-form__header__title:before {
+    content: "\e601";
+    margin-right: 6px
+}
+
+.icon-viaduct:before {
+    content: "\e602"
+}
+
+.icon-tunnel:before {
+    content: "\e603"
+}
+
+.icon-snelweg:before {
+    content: "\e604"
+}
+
+.icon-snelheid:before {
+    content: "\e605"
+}
+
+.icon-sluis:before {
+    content: "\e606"
+}
+
+.icon-schade_wegen:before {
+    content: "\e607"
+}
+
+.icon-schade_water:before {
+    content: "\e608"
+}
+
+.icon-planning:before {
+    content: "\e609"
+}
+
+.icon-facts_and_figures:before {
+    content: "\e60a"
+}
+
+.icon-dijk:before {
+    content: "\e60b"
+}
+
+.icon-brug:before {
+    content: "\e60c"
+}
+
+.icon-brug_sluistijden:before {
+    content: "\e60d"
+}
+
+.icon-waterafvoer:before {
+    content: "\e60e"
+}
+
+.icon-zoutgehalte:before {
+    content: "\e60f"
+}
+
+.icon-wind:before {
+    content: "\e610"
+}
+
+.icon-watertemperatuur:before {
+    content: "\e611"
+}
+
+.icon-waterstanden:before {
+    content: "\e612"
+}
+
+.icon-waterkwaliteit:before {
+    content: "\e613"
+}
+
+.icon-stroomsnelheid:before {
+    content: "\e614"
+}
+
+.icon-storm:before {
+    content: "\e615"
+}
+
+.icon-lucht:before {
+    content: "\e616"
+}
+
+.icon-hoogwater:before {
+    content: "\e617"
+}
+
+.icon-golven:before {
+    content: "\e618"
+}
+
+.icon-getij:before {
+    content: "\e619"
+}
+
+.icon-droogte:before {
+    content: "\e61a"
+}
+
+.icon-file-excel:before {
+    content: "\e61b"
+}
+
+.icon-file-pdf:before {
+    content: "\e61c"
+}
+
+.icon-file-powerpoint:before {
+    content: "\e61d"
+}
+
+.icon-file:before,
+.icon-file-txt:before {
+    content: "\e61e"
+}
+
+.icon-file-visio:before {
+    content: "\e61f"
+}
+
+.icon-file-word:before {
+    content: "\e620"
+}
+
+.icon-file-zip:before {
+    content: "\e621"
+}
+
+.icon-googleplus:before {
+    content: "\e622"
+}
+
+@font-face {
+    font-family: 'RijksoverheidSansHeading';
+    src: url("https://staticresources.rijkswaterstaat.nl/assets/font/heading/regular/rijksoverheidsansheading-regular_2_0-webfont.eot");
+    src: url("https://staticresources.rijkswaterstaat.nl/assets/font/heading/regular/rijksoverheidsansheading-regular_2_0-webfont.eot?#iefix") format("embedded-opentype"), url("https://staticresources.rijkswaterstaat.nl/assets/font/heading/regular/rijksoverheidsansheading-regular_2_0-webfont.woff") format("woff"), url("https://staticresources.rijkswaterstaat.nl/assets/font/heading/regular/rijksoverheidsansheading-regular_2_0-webfont.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'RijksoverheidSansText';
+    src: url("https://staticresources.rijkswaterstaat.nl/assets/font/text/italic/ROsanswebtextitalic.eot");
+    src: url("https://staticresources.rijkswaterstaat.nl/assets/font/text/italic/ROsanswebtextitalic.eot?#iefix") format("embedded-opentype"), url("https://staticresources.rijkswaterstaat.nl/assets/font/text/italic/ROsanswebtextitalic.woff") format("woff"), url("https://staticresources.rijkswaterstaat.nl/assets/font/text/italic/ROsanswebtextitalic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'RijksoverheidSansText';
+    src: url("https://staticresources.rijkswaterstaat.nl/assets/font/text/regular/ROsanswebtextregular.eot");
+    src: url("https://staticresources.rijkswaterstaat.nl/assets/font/text/regular/ROsanswebtextregular.eot?#iefix") format("embedded-opentype"), url("https://staticresources.rijkswaterstaat.nl/assets/font/text/regular/ROsanswebtextregular.woff") format("woff"), url("https://staticresources.rijkswaterstaat.nl/assets/font/text/regular/ROsanswebtextregular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'RijksoverheidSansText';
+    src: url("https://staticresources.rijkswaterstaat.nl/assets/font/text/bold/ROsanswebtextbold.eot");
+    src: url("https://staticresources.rijkswaterstaat.nl/assets/font/text/bold/ROsanswebtextbold.eot?#iefix") format("embedded-opentype"), url("https://staticresources.rijkswaterstaat.nl/assets/font/text/bold/ROsanswebtextbold.woff") format("woff"), url("https://staticresources.rijkswaterstaat.nl/assets/font/text/bold/ROsanswebtextbold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+
+.rws-widget {
+    line-height: 1
+}
+
+.rws-widget,
+.rws-widget *,
+.rws-widget *:before,
+.rws-widget *:after {
+    box-sizing: border-box
+}
+
+.rws-widget html,
+.rws-widget body {
+    background: #fff;
+    margin: 0;
+    padding: 0
+}
+
+@-ms-viewport {
+    .rws-widget {
+        width: device-width
+    }
+}
+
+.rws-widget #app-container *,
+.rws-widget #app-container *:before,
+.rws-widget #app-container *:after {
+    box-sizing: border-box
+}
+
+.rws-widget a:hover,
+.rws-widget a:focus {
+    color: #08517b
+}
+
+.rws-widget .page {
+    background-color: #efeeeb;
+    position: relative;
+    overflow: hidden
+}
+
+@media print {
+    .rws-widget .page {
+        overflow: auto
+    }
+    .rws-widget #legend {
+        display: none!important
+    }
+    .rws-widget .main,
+    .rws-widget .main .main-content {
+        position: relative!important;
+        top: auto!important;
+        left: auto!important;
+        height: auto!important;
+        width: auto!important
+    }
+    .rws-widget .main .main-content .filter-wrapper,
+    .rws-widget .main .main-content .results__container.actueel {
+        display: none!important
+    }
+    .rws-widget .main .main-content .main-toggle {
+        display: none
+    }
+    .rws-widget .main .main-content .results__container {
+        width: 100%;
+        margin: 0;
+        padding: 0
+    }
+    .rws-widget .map {
+        display: none!important
+    }
+}
+
+.rws-widget .main {
+    position: absolute;
+    transition: left .5s
+}
+
+.rws-widget li.main {
+    position: relative
+}
+
+.rws-widget .main-content {
+    overflow: auto
+}
+
+.rws-widget .main-toggle a {
+    background: #efeeeb;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    padding: 17px 4px 17px 0
+}
+
+.rws-widget .main-toggle a span:before {
+    font-size: 11px;
+    color: #154273
+}
+
+.rws-widget .main-toggle {
+    outline: none;
+    position: absolute;
+    top: 90px;
+    width: 50px;
+    cursor: pointer;
+    margin-left: -5px;
+    padding-left: 5px
+}
+
+.rws-widget .hidden {
+    position: absolute;
+    top: -999999em;
+    left: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden
+}
+
+.rws-widget html.no-positionfixed body.filter-modal-visible,
+.rws-widget html body.filter-modal-visible {
+    overflow: hidden
+}
+
+.rws-widget h1,
+.rws-widget h2,
+.rws-widget h3,
+.rws-widget h4,
+.rws-widget h5,
+.rws-widget h6 {
+    margin: 0;
+    line-height: normal;
+    font-weight: 700;
+    color: #154273;
+    font-size: 1.5em
+}
+
+.rws-widget h1 a,
+.rws-widget h2 a {
+    color: #154273;
+    text-decoration: none
+}
+
+.rws-widget h3.mobile {
+    display: none
+}
+
+@media (max-width:470px) {
+    .rws-widget h3.mobile {
+        display: block;
+        margin-top: 12px
+    }
+}
+
+.rws-widget h3.not-mobile {
+    display: none
+}
+
+@media (min-width:470px) {
+    .rws-widget h3.not-mobile {
+        display: block
+    }
+}
+
+.rws-widget .heading-xlarge {
+    font-size: 20px
+}
+
+.rws-widget .heading-large {
+    font-size: 18px
+}
+
+.rws-widget .heading-medium {
+    font-size: 16px
+}
+
+.rws-widget .heading-small {
+    font-size: 14px
+}
+
+.rws-widget .httperror {
+    color: #e60000
+}
+
+.rws-widget .header__container {
+    margin-top: 20px
+}
+
+.rws-widget .header__container,
+.rws-widget .text__container {
+    padding: 10px 10px 10px 30px;
+    background: #fff;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2);
+    border: 1px solid transparent;
+    transition: border-color .15s;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.rws-widget .header__container .icon-spitsverwachting {
+    font-size: 20px;
+    vertical-align: middle
+}
+
+.rws-widget .header__container .icon-actueel,
+.rws-widget .header__container .results__container.actueel .link__container a .text-btn:before,
+.rws-widget .results__container.actueel .link__container a .header__container .text-btn:before {
+    font-size: 20px;
+    vertical-align: middle
+}
+
+@media (max-width:470px) {
+    .rws-widget .header__container .icon-actueel:before,
+    .rws-widget .header__container .results__container.actueel .link__container a .text-btn:before,
+    .rws-widget .results__container.actueel .link__container a .header__container .text-btn:before {
+        font-size: 24px
+    }
+}
+
+.rws-widget .filter-resultaten {
+    margin-top: 12px
+}
+
+@media (max-width:470px) {
+    .rws-widget .filter-resultaten {
+        display: none
+    }
+}
+
+.rws-widget div {
+    font-family: "RijksoverheidSansText", Verdana, Arial, sans-serif
+}
+
+.rws-widget p {
+    margin: 0 0 1em;
+    line-height: 1.5
+}
+
+.rws-widget .text-meta {
+    color: #666
+}
+
+.rws-widget .text-dark {
+    color: #222
+}
+
+.rws-widget em,
+.rws-widget .text-em {
+    color: #154273;
+    font-weight: 700
+}
+
+.rws-widget strong,
+.rws-widget .text-bold {
+    font-weight: 700
+}
+
+.rws-widget .text-large {
+    font-size: 16px
+}
+
+.rws-widget a {
+    color: #0b71ab;
+    text-decoration: underline
+}
+
+.rws-widget a:hover {
+    text-decoration: none
+}
+
+.rws-widget span.normal {
+    font-weight: 400
+}
+
+.rws-widget .tab-nav {
+    margin: 0;
+    list-style: none;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    padding: 18px 0 0;
+    min-width: 512px
+}
+
+.rws-widget .tab-nav__item {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+    border-bottom: 1px solid #cbcbcb;
+    border-right: 1px solid #e8e7e5;
+    border-top: 1px solid #e8e7e5
+}
+
+.rws-widget .tab-nav__item:last-of-type {
+    border-right: none
+}
+
+.rws-widget .tab-nav__link {
+    display: block;
+    padding: 11px 0;
+    color: #666;
+    text-decoration: none;
+    border-top: 4px solid transparent;
+    border-bottom: transparent;
+    transition: color .15s, border-color .15s
+}
+
+.rws-widget .tab-nav__link:hover {
+    color: #0b71ab;
+    border-top-color: #0b71ab
+}
+
+.rws-widget .tab-nav__item--active .tab-nav__link {
+    color: #0b71ab;
+    border-top-color: #0b71ab
+}
+
+.rws-widget .tab-nav__item--active {
+    border-bottom: 0;
+    background-color: #efeeeb;
+    border-top: 2px
+}
+
+.rws-widget .tab-nav__icon {
+    vertical-align: sub;
+    line-height: 1;
+    margin-right: 2px
+}
+
+.rws-widget .tab-nav__icon:before {
+    font-size: 24px
+}
+
+.rws-widget #nav-search .btn {
+    font: 1.1em/1.4em "RijksoverheidSansText", Verdana, Arial, sans-serif
+}
+
+.rws-widget .btn {
+    -webkit-appearance: none;
+    background-color: #f9e11e;
+    vertical-align: middle;
+    color: #222;
+    border: 0;
+    padding: 5px 10px;
+    margin: 4px 0;
+    min-height: 20px;
+    font-size: 14px;
+    font-family: "RijksoverheidSansText", Verdana, Arial, sans-serif;
+    text-decoration: none;
+    text-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: 700;
+    transition: color .15s, background-color .15s
+}
+
+.rws-widget .btn:focus {
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2)
+}
+
+.rws-widget .btn:focus,
+.rws-widget .btn:active,
+.rws-widget .btn:hover {
+    color: #222;
+    background: #eed60f
+}
+
+.rws-widget .btn--transparent {
+    background-color: transparent;
+    color: #0b71ab;
+    font-weight: 400;
+    padding-left: 0
+}
+
+.rws-widget .btn--transparent:hover {
+    color: #154273;
+    background-color: transparent
+}
+
+.rws-widget .btn--transparent:focus,
+.rws-widget .btn--transparent:active,
+.rws-widget .btn--transparent:active .rws-widget .btn--transparent:focus {
+    background-color: transparent;
+    color: #154273
+}
+
+.rws-widget .btn--blue {
+    background-color: #0b71ab;
+    color: #fff
+}
+
+.rws-widget .btn--blue:hover {
+    color: #fff;
+    background-color: #154273
+}
+
+.rws-widget .btn--blue:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    background: url("/images/loader-mobile.gif") no-repeat left top;
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+    margin-left: -12px;
+    opacity: 0;
+    transition: all .2s ease-in-out
+}
+
+.rws-widget .btn--blue span {
+    opacity: 1;
+    transition: all .2s ease-in-out
+}
+
+.rws-widget .btn--blue.loading span {
+    opacity: 0
+}
+
+.rws-widget .btn--blue.loading:before {
+    opacity: 1
+}
+
+.rws-widget .btn--grey {
+    background-color: #e8e7e5;
+    color: #222
+}
+
+.rws-widget .btn--grey:hover,
+.rws-widget .btn--grey:focus {
+    background-color: #d0ceca
+}
+
+.rws-widget .btn--yellow {
+    height: 46px;
+    position: relative
+}
+
+.rws-widget .btn--yellow:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    background: url("/images/loading-black-yellow.gif") no-repeat left top;
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+    margin-left: -12px;
+    opacity: 0;
+    transition: all .2s ease-in-out
+}
+
+.rws-widget .btn--yellow span {
+    opacity: 1;
+    transition: all .2s ease-in-out
+}
+
+.rws-widget .btn--yellow.loading span {
+    opacity: 0
+}
+
+.rws-widget .btn--yellow.loading:before {
+    opacity: 1
+}
+
+.rws-widget .btn--large {
+    padding: 14px
+}
+
+.rws-widget .btn--small {
+    padding: 5px 5px 5px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    min-height: 0
+}
+
+.rws-widget .btn--small .icon:before {
+    font-size: 14px
+}
+
+.rws-widget .btn--addvia,
+.rws-widget .btn--removevia {
+    text-decoration: underline!important;
+    position: relative;
+    padding-left: 20px
+}
+
+.rws-widget .btn--addvia *[class^="icon-"],
+.rws-widget .btn--removevia *[class^="icon-"] {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    margin: 0;
+    font-size: 14px
+}
+
+.rws-widget .btn+.btn--transparent {
+    padding-left: 10px
+}
+
+@media (max-width:470px) {
+    .rws-widget .btn+.btn--transparent {
+        padding-left: 0
+    }
+    .rws-widget .actueel {
+        display: none
+    }
+}
+
+.rws-widget .filter-nav {
+    border: 1px solid #0b71ab;
+    font-weight: 700;
+    display: table;
+    font-size: 14px;
+    border-radius: 3px;
+    table-layout: fixed
+}
+
+.rws-widget .filter-nav__item {
+    display: table-cell;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 16px;
+    line-height: 1;
+    transition: background-color .15s, color .15s
+}
+
+.rws-widget .filter-nav__item:focus {
+    color: #fff
+}
+
+.rws-widget .filter-nav__item--is-active {
+    color: #fff;
+    background-color: #0b71ab
+}
+
+.rws-widget .filter-nav__item--is-active:hover {
+    color: #fff
+}
+
+.rws-widget .filter-form {
+    margin-bottom: 16px;
+    position: relative
+}
+
+.rws-widget .filter-form__header {
+    overflow: hidden
+}
+
+.rws-widget .filter-form__header__title {
+    float: left
+}
+
+.rws-widget .filter-form__header__title a {
+    margin-bottom: 5px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .filter-form__header__title a {
+    margin-left: 24px
+}
+
+.rws-widget .filter-form__header__nav {
+    margin-bottom: 13px;
+    width: 100%
+}
+
+.rwshindersearchpanel--small.rws-widget .filter-form__header__nav,
+.rwshindersearchpanel--medium.rws-widget .filter-form__header__nav,
+.rwshindersearchpanel--large.rws-widget .filter-form__header__nav {
+    float: right;
+    width: auto
+}
+
+.rws-widget .filter-form__footer {
+    display: table;
+    width: 100%
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .filter-form__footer {
+    margin-top: 6px
+}
+
+.rwshindersearchpanel--small.rws-widget .filter-form__footer,
+.rwshindersearchpanel--medium.rws-widget .filter-form__footer,
+.rwshindersearchpanel--large.rws-widget .filter-form__footer {
+    display: none
+}
+
+.rws-widget .filter-form__footer .btn {
+    display: table-cell;
+    width: 100%;
+    margin-right: 2%
+}
+
+.rwshindersearchpanel--small.rws-widget .filter-form__footer .btn,
+.rwshindersearchpanel--medium.rws-widget .filter-form__footer .btn,
+.rwshindersearchpanel--large.rws-widget .filter-form__footer .btn {
+    width: 49%
+}
+
+.rws-widget .filter-form__footer .btn:last-of-type {
+    margin-right: 0
+}
+
+.rwshindersearchpanel--small.rws-widget .filter-form__from-to-wrapper,
+.rwshindersearchpanel--medium.rws-widget .filter-form__from-to-wrapper,
+.rwshindersearchpanel--large.rws-widget .filter-form__from-to-wrapper {
+    display: table;
+    width: 100%
+}
+
+.rwshindersearchpanel--small.rws-widget .filter-form__from-to-wrapper .textfield-wrapper,
+.rwshindersearchpanel--medium.rws-widget .filter-form__from-to-wrapper .textfield-wrapper,
+.rwshindersearchpanel--large.rws-widget .filter-form__from-to-wrapper .textfield-wrapper {
+    display: table-cell;
+    padding-right: 4px;
+    width: 40%;
+    white-space: nowrap;
+    vertical-align: top
+}
+
+.rwshindersearchpanel--small.rws-widget .filter-form__from-to-wrapper .textfield-wrapper input[type='text'],
+.rwshindersearchpanel--medium.rws-widget .filter-form__from-to-wrapper .textfield-wrapper input[type='text'],
+.rwshindersearchpanel--large.rws-widget .filter-form__from-to-wrapper .textfield-wrapper input[type='text'] {
+    font-size: 14px;
+    padding-right: 28px
+}
+
+.rwshindersearchpanel--small.rws-widget .filter-form__from-to-wrapper .textfield-wrapper .autocomplete-warning,
+.rwshindersearchpanel--medium.rws-widget .filter-form__from-to-wrapper .textfield-wrapper .autocomplete-warning,
+.rwshindersearchpanel--large.rws-widget .filter-form__from-to-wrapper .textfield-wrapper .autocomplete-warning {
+    white-space: normal
+}
+
+.rws-widget .filter-form__from-to-wrapper__submit {
+    width: 100%;
+    height: 46px;
+    padding: 5px 14px;
+    margin-top: 8px;
+    white-space: nowrap
+}
+
+.rwshindersearchpanel--large.rws-widget .filter-form__from-to-wrapper__submit {
+    margin-top: 0;
+    width: 90px;
+    position: absolute;
+    right: 0;
+    bottom: -8px
+}
+
+.rwshindersearchpanel--large.rws-widget .filter-form__from-to-wrapper__submit--with-date {
+    bottom: -1px
+}
+
+.rwshindersearchpanel--large.rws-widget .filter-form__from-to-wrapper__submit--with-error {
+    bottom: 33px
+}
+
+.rwshindersearchpanel--small.rws-widget .filter-form__roadnumber-wrapper,
+.rwshindersearchpanel--medium.rws-widget .filter-form__roadnumber-wrapper,
+.rwshindersearchpanel--large.rws-widget .filter-form__roadnumber-wrapper {
+    display: table
+}
+
+.rwshindersearchpanel--small.rws-widget .filter-form__roadnumber-wrapper .textfield-wrapper,
+.rwshindersearchpanel--medium.rws-widget .filter-form__roadnumber-wrapper .textfield-wrapper,
+.rwshindersearchpanel--large.rws-widget .filter-form__roadnumber-wrapper .textfield-wrapper {
+    display: table-cell;
+    padding-right: 4px;
+    white-space: nowrap;
+    vertical-align: top
+}
+
+.rwshindersearchpanel--small.rws-widget .filter-form__roadnumber-wrapper .textfield-wrapper .autocomplete-warning,
+.rwshindersearchpanel--medium.rws-widget .filter-form__roadnumber-wrapper .textfield-wrapper .autocomplete-warning,
+.rwshindersearchpanel--large.rws-widget .filter-form__roadnumber-wrapper .textfield-wrapper .autocomplete-warning {
+    max-width: 234px;
+    white-space: pre-wrap;
+    word-wrap: break-word
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .filter-form__roadnumber-wrapper .Voer .textfield-label {
+    display: none;
+    display: none
+}
+
+.rws-widget .filter-form__roadnumber-wrapper .filter-form__roadnumber-wrapper__submit {
+    position: relative;
+    width: 100%;
+    margin-top: 19px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .filter-form__roadnumber-wrapper .filter-form__roadnumber-wrapper__submit {
+    display: none;
+    display: none
+}
+
+.rws-widget .filter-form__container {
+    margin: 34px 10px 30px;
+    padding: 20px 20px 0;
+    background-color: #FFF;
+    border-color: #E0E0DD;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px 4px 0 0;
+    box-shadow: none
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .filter-form__container p:empty {
+    display: none
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .filter-form__container {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 0
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .filter-form__container .filter-form {
+    padding: 10px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .filter-form__container p:empty {
+    display: none
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .filter-form__container .filter-form__header__title {
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 13px;
+    margin-top: 6px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .filter-form__container .filter-form__header__title:before {
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.rws-widget #warning-voer-wegnummer-in {
+    min-width: 228px
+}
+
+@media (max-width:799px) {
+    .rws-widget p.info {
+        width: 300px
+    }
+}
+
+@media (min-width:470px) and (max-width:599px) {
+    .rws-widget p.info {
+        width: 220px
+    }
+}
+
+.rws-widget p.byline {
+    color: #222;
+    font-size: 90%;
+    margin-top: 10px
+}
+
+.rws-widget .form-warning {
+    font-size: 12px
+}
+
+.rws-widget::-ms-clear {
+    display: none
+}
+
+.rws-widget .form-row {
+    margin-bottom: 0
+}
+
+.rws-widget .form-row--bordered {
+    border-bottom: 1px solid #CBCBCB;
+    padding-bottom: 6px
+}
+
+.rws-widget .form-row.filter-form__from-to-wrapper {
+    font-size: 1px
+}
+
+.rws-widget .form-row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.rws-widget .form-row.daterangepicker {
+    position: relative
+}
+
+.rws-widget .form-row__field {
+    float: left;
+    width: 50%;
+    position: relative
+}
+
+.rws-widget .form-row__field--from {
+    padding-right: 20px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .form-row__field--from,
+.rwshindersearchpanel--small.rws-widget .form-row__field--from,
+.rwshindersearchpanel--medium.rws-widget .form-row__field--from {
+    float: none;
+    width: 100%;
+    padding: 0;
+    position: relative
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .form-row__field--from input[type="text"].textfield,
+.rwshindersearchpanel--small.rws-widget .form-row__field--from input[type="text"].textfield,
+.rwshindersearchpanel--medium.rws-widget .form-row__field--from input[type="text"].textfield {
+    padding-left: 50px;
+    padding-right: 60px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .form-row__field--from .textfield-label,
+.rwshindersearchpanel--small.rws-widget .form-row__field--from .textfield-label,
+.rwshindersearchpanel--medium.rws-widget .form-row__field--from .textfield-label {
+    position: absolute;
+    left: 10px;
+    top: 19px;
+    z-index: 2
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .form-row__field--from .erasebutton,
+.rwshindersearchpanel--extrasmall.rws-widget .form-row__field--from .loading-container,
+.rwshindersearchpanel--small.rws-widget .form-row__field--from .erasebutton,
+.rwshindersearchpanel--small.rws-widget .form-row__field--from .loading-container,
+.rwshindersearchpanel--medium.rws-widget .form-row__field--from .erasebutton,
+.rwshindersearchpanel--medium.rws-widget .form-row__field--from .loading-container {
+    right: 30px
+}
+
+.rws-widget .form-row__field--to {
+    padding-left: 20px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .form-row__field--to,
+.rwshindersearchpanel--small.rws-widget .form-row__field--to,
+.rwshindersearchpanel--medium.rws-widget .form-row__field--to {
+    float: none;
+    width: 100%;
+    padding: 0;
+    position: relative
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .form-row__field--to input[type="text"].textfield,
+.rwshindersearchpanel--small.rws-widget .form-row__field--to input[type="text"].textfield,
+.rwshindersearchpanel--medium.rws-widget .form-row__field--to input[type="text"].textfield {
+    padding-left: 50px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .form-row__field--to .textfield-label,
+.rwshindersearchpanel--small.rws-widget .form-row__field--to .textfield-label,
+.rwshindersearchpanel--medium.rws-widget .form-row__field--to .textfield-label {
+    position: absolute;
+    left: 10px;
+    top: 19px;
+    z-index: 2
+}
+
+.rws-widget .form-row__field--via {
+    padding-top: 6px;
+    padding-right: 20px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .form-row__field--via,
+.rwshindersearchpanel--small.rws-widget .form-row__field--via,
+.rwshindersearchpanel--medium.rws-widget .form-row__field--via {
+    float: none;
+    width: 100%;
+    padding: 0;
+    position: relative
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .form-row__field--via input[type="text"].textfield,
+.rwshindersearchpanel--small.rws-widget .form-row__field--via input[type="text"].textfield,
+.rwshindersearchpanel--medium.rws-widget .form-row__field--via input[type="text"].textfield {
+    padding-left: 50px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .form-row__field--via .textfield-label,
+.rwshindersearchpanel--small.rws-widget .form-row__field--via .textfield-label,
+.rwshindersearchpanel--medium.rws-widget .form-row__field--via .textfield-label {
+    position: absolute;
+    left: 10px;
+    top: 19px;
+    z-index: 2
+}
+
+.rws-widget .form-row__field--from input[type="text"].textfield,
+.rws-widget .form-row__field--to input[type="text"].textfield,
+.rws-widget .form-row__field--via input[type="text"].textfield {
+    font-size: 14px;
+    padding-right: 32px
+}
+
+.rws-widget .form-row__field--removevia {
+    padding-left: 0;
+    margin-left: 0
+}
+
+.rwshindersearchpanel--large.rws-widget .form-row__field--removevia,
+.rwshindersearchpanel--medium.rws-widget .form-row__field--removevia {
+    padding-top: 33px;
+    margin-left: -10px
+}
+
+.rws-widget .form-row__field--filterdate,
+.rws-widget .form-row__field--filterhinder {
+    padding-top: 12px
+}
+
+.rwshindersearchpanel--large.rws-widget .form-row__field--filterdate,
+.rws-widget .form-row__field--filterhinder {
+    max-width: 210px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .form-row__field--filterdate {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0
+}
+
+.rws-widget .form-row__field--filterhinder {
+    width: 100%;
+    padding-right: 0
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .form-row__field--filterdate .mobile,
+.rws-widget .form-row__field--filterhinder .mobile {
+    margin-top: 0;
+    margin-bottom: 8px
+}
+
+.rws-widget .form-row__field--filterdate {
+    padding-right: 4px
+}
+
+.rws-widget .form-row__field--filterhinder {
+    padding-left: 4px
+}
+
+.rws-widget .form-row__field--datepicker-from,
+.rws-widget .form-row__field--datepicker-until {
+    padding-top: 12px
+}
+
+.rws-widget .form-row__field--datepicker-from {
+    padding-right: 4px
+}
+
+.rwshindersearchpanel--large.rws-widget .form-row__field--datepicker-from {
+    max-width: 210px
+}
+
+.rws-widget .form-row__field--datepicker-until {
+    padding-left: 4px
+}
+
+.rwshindersearchpanel--large.rws-widget .form-row__field--datepicker-until {
+    max-width: 210px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .form-row__field--datepicker-until .DateRangePicker,
+.rwshindersearchpanel--small.rws-widget .form-row__field--datepicker-until .DateRangePicker,
+.rwshindersearchpanel--medium.rws-widget .form-row__field--datepicker-until .DateRangePicker {
+    left: auto!important;
+    right: 0
+}
+
+.rws-widget .date-field-wrapper input.textfield-date {
+    max-width: 100%
+}
+
+.rws-widget .date-field-wrapper .textfield-wrapper-date {
+    float: none;
+    margin-right: 0
+}
+
+.rws-widget .date-field-wrapper+.date-field-wrapper {
+    padding-left: 15px;
+    width: 225px
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .rws-widget .date-field-wrapper+.date-field-wrapper {
+        width: 220px
+    }
+}
+
+.rws-widget .date-field-wrapper .error {
+    height: 30px;
+    display: block
+}
+
+.rws-widget .veranderrichtinga {
+    position: absolute;
+    top: 20px;
+    right: -13px;
+    cursor: pointer;
+    height: 44px;
+    display: block;
+    width: 31px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .veranderrichtinga,
+.rwshindersearchpanel--small.rws-widget .veranderrichtinga,
+.rwshindersearchpanel--medium.rws-widget .veranderrichtinga {
+    top: 5px;
+    right: 6px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .veranderrichtinga {
+    float: right
+}
+
+.rws-widget .veranderrichtinga:hover .icon {
+    fill: #154273
+}
+
+.rws-widget .veranderrichtinga .icon {
+    width: 20px;
+    height: 20px;
+    fill: #0b71ab;
+    position: absolute;
+    left: 7px;
+    top: 12px
+}
+
+.rwshindersearchpanel--large.rws-widget .veranderrichtinga .icon,
+.rwshindersearchpanel--medium.rws-widget .veranderrichtinga .icon {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.rws-widget .via-add {
+    display: none
+}
+
+.rws-widget .via-edit.hidden~.via-add {
+    display: block
+}
+
+.rws-widget .results__container.actueel .link__container a .text-btn {
+    display: none
+}
+
+@media (max-width:470px) {
+    .rws-widget .results__container.actueel .header__container,
+    .rws-widget .results__container.actueel .result-card-list {
+        display: none
+    }
+    .rws-widget .results__container.actueel .link__container a {
+        float: none!important;
+        display: block;
+        background: #fff;
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2);
+        padding: 15px 10px;
+        position: relative;
+        border-radius: 0;
+        text-decoration: none!important
+    }
+    .rws-widget .results__container.actueel .link__container a .text-btn {
+        display: inline;
+        position: relative;
+        padding-left: 26px;
+        color: #154273;
+        font-weight: 700
+    }
+    .rws-widget .results__container.actueel .link__container a .text-btn:before {
+        font-size: 24px;
+        position: absolute;
+        left: 0;
+        top: 0
+    }
+    .rws-widget .results__container.actueel .link__container a .text-link {
+        display: none
+    }
+    .rws-widget .results__container.actueel .link__container a .icon-circled-arrow-right {
+        position: absolute;
+        right: 8px;
+        top: 13px
+    }
+    .rws-widget .results__container.actueel .link__container a .icon-circled-arrow-right:before {
+        font-size: 18px
+    }
+}
+
+.rws-widget .main .results__container {
+    margin: 10px 10px 0
+}
+
+@media (max-width:470px) {
+    .rws-widget .main .results__container.initial {
+        display: none
+    }
+}
+
+.rws-widget .main .results__container.resultfooter {
+    margin-top: 0
+}
+
+.rws-widget .main .results__container.resultfooter .let-op-block {
+    padding-top: 14px
+}
+
+.rws-widget .main .results__container.resultfooter .let-op-block h1 {
+    font-family: "RijksoverheidSansText", Verdana, Arial, sans-serif;
+    font-size: 16px
+}
+
+.rws-widget .info__block {
+    background: #fff;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2);
+    position: relative;
+    transition: border-color .15s;
+    margin-bottom: 0;
+    display: block;
+    outline: none
+}
+
+.rws-widget .share-faq-links {
+    border: 1px solid transparent
+}
+
+.rws-widget .let-op-block {
+    border: 1px solid #4190C5;
+    margin-top: 28px
+}
+
+.rws-widget .sharelinks__container {
+    padding-left: 28px
+}
+
+.rws-widget .info__container {
+    padding-left: 26px;
+    padding-right: 20px
+}
+
+.rws-widget .hinder h2.text-meta.heading-small {
+    margin: 10px 0
+}
+
+.rws-widget .warning.unknown-road {
+    color: #666;
+    font-size: 12.6px
+}
+
+.rws-widget .sharelink {
+    margin-left: 0;
+    padding-left: 0
+}
+
+.rws-widget #main-toggle-icon {
+    font-size: 80%
+}
+
+.rws-widget .button-wrapper,
+.rws-widget .filter-form__footer .btn.btn-dismiss-modal,
+.rws-widget .filter-form__header__title.modal-header {
+    display: none
+}
+
+@media (max-width:470px) {
+    .rws-widget .hinder .filter-form__container-modal {
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        overflow: auto;
+        height: 100%;
+        z-index: 1000
+    }
+    .rws-widget .hinder .filter-form__container-modal .filter-form__header__title.modal-header {
+        display: block;
+        font-size: 24px;
+        padding-left: 0
+    }
+    .rws-widget .hinder .filter-form__container-modal .filter-form__header__title.modal-header:before {
+        display: none
+    }
+    .rws-widget .hinder .filter-form__container-modal .filter-form__header__title.initial {
+        display: none
+    }
+    .rws-widget .hinder .filter-form__container-modal .filter-form {
+        padding-top: 22px
+    }
+    .rws-widget .hinder .filter-form__container-modal .filter-form__footer {
+        width: 50%;
+        float: left;
+        padding-right: 4px;
+        margin: 5px 0 0
+    }
+    .rws-widget .hinder .filter-form__container-modal .filter-form__footer .btn.btn-dismiss-modal {
+        display: inline-block;
+        margin-right: 4px;
+        margin-top: 0
+    }
+    .rws-widget .hinder .filter-form__container-modal .filter-form__footer .btn+.btn {
+        margin-left: 10px;
+        width: calc(50% - 4px)
+    }
+    .rws-widget .hinder .filter-form__container-modal .filter-form__footer+.filter-form__from-to-wrapper__submit {
+        width: calc(50% - 4px);
+        float: right;
+        margin-top: 5px
+    }
+    .rws-widget .hinder .filter-form__container.hidden-small {
+        display: none
+    }
+    .rws-widget .filter-wrapper>.button-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block
+    }
+    .rws-widget .filter-wrapper>.button-wrapper .btn-toggle-filter {
+        display: block;
+        width: 100%
+    }
+    .map-open .rws-widget .filter-wrapper>.button-wrapper {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 201;
+        background: #EFEEEB;
+        padding-top: 5px;
+        padding-bottom: 5px
+    }
+}
+
+.rws-widget .map .map-expander {
+    background: 0 0;
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, .48)100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, .48)));
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, .48)100%);
+    background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, .48)100%);
+    background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, .48)100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, .48)100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0);
+    height: 50px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    color: #fff;
+    font-weight: 700;
+    font-family: "RijksoverheidSansText", Verdana, Arial, sans-serif;
+    font-size: 14px;
+    padding-top: 15px;
+    outline: 0;
+    border: 0;
+    cursor: pointer
+}
+
+@media (min-width:768px) {
+    .rws-widget .map .map-expander {
+        display: none
+    }
+}
+
+.rws-widget .map .map-expander span.map-collapsed-label,
+.rws-widget .map .map-expander span.map-expanded-label {
+    padding-right: 18px;
+    position: relative
+}
+
+.rws-widget .map .map-expander span.map-collapsed-label:before,
+.rws-widget .map .map-expander span.map-expanded-label:before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 13px
+}
+
+.rws-widget .map .map-expander span.map-expanded-label {
+    display: none
+}
+
+.rws-widget .map .map-expander span.map-expanded-label:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.rws-widget .map .map-expander.expanded span.map-collapsed-label {
+    display: none
+}
+
+.rws-widget .map .map-expander.expanded span.map-expanded-label {
+    display: inline
+}
+
+.rws-widget .map .map-close-button {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    border: 0;
+    background: 0 0;
+    color: #0b71ab;
+    text-indent: -10000em;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.rws-widget .map .map-close-button:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-indent: 0
+}
+
+.map-open .rws-widget .map .map-close-button {
+    display: block
+}
+
+.rws-widget .map .backButton {
+    display: none
+}
+
+@media (max-width:470px) {
+    .rws-widget .map .backButton {
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 99
+    }
+    .rws-widget .map .backButton a {
+        color: #fff
+    }
+}
+
+.map-open .rws-widget .map .backButton {
+    display: none
+}
+
+.rws-widget .link__container .icon-circled-arrow-right {
+    font-size: 20px;
+    vertical-align: middle
+}
+
+.rws-widget .select {
+    background-image: linear-gradient(-180deg, #FAFAFA 51%, #ECECEC 100%);
+    border: 1px solid #A2A2A2;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 36px;
+    width: 100%;
+    display: block;
+    padding: 0 8px;
+    position: relative;
+    user-select: none;
+    cursor: pointer
+}
+
+.rws-widget .select:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 24px;
+    border-left: 1px solid #A2A2A2
+}
+
+.rws-widget .select:before {
+    font-family: 'icons';
+    display: inline-block;
+    content: "˃";
+    vertical-align: middle;
+    position: absolute;
+    line-height: 24px;
+    top: 6px;
+    right: 7px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 10px
+}
+
+.rws-widget .select-checkbox {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    z-index: -1
+}
+
+.rws-widget .select-checkbox:focus+label.select {
+    border: 1px solid #000
+}
+
+.rws-widget .select-dropdown {
+    display: none
+}
+
+.rws-widget .select-dropdown ul>li:before {
+    display: none
+}
+
+.rws-widget .select-checkbox:checked~.select-dropdown {
+    display: block
+}
+
+.rws-widget .select-dropdown ul {
+    position: absolute;
+    z-index: 1000;
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 2px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+}
+
+.rws-widget .select-dropdown ul input[type=radio]:focus+span {
+    font-weight: 700
+}
+
+.rws-widget .select-dropdown ul>li label,
+.rws-widget .select-dropdown ul>li {
+    cursor: pointer
+}
+
+.rws-widget .select-dropdown ul>li:first-child {
+    padding-top: 16px
+}
+
+.rws-widget .select-dropdown ul>li {
+    padding: 6px 6px 6px 12px
+}
+
+.rws-widget .select-dropdown ul>li.divider {
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eee;
+    border-bottom: 2px solid #F1F1EF
+}
+
+.rws-widget input[type="text"].textfield {
+    font-family: "RijksoverheidSansText", Verdana, Arial, sans-serif;
+    color: #222;
+    line-height: 40px;
+    height: 46px;
+    font-size: 18px;
+    font-weight: 400;
+    outline: 0;
+    max-width: 100%;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #a9a9a9;
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .23);
+    border-radius: 3px;
+    padding: 2px 12px;
+    transition: border-color .15s
+}
+
+.rws-widget input[type="text"].textfield:focus,
+.rws-widget input[type="text"].textfield.has-focus {
+    border: 1px solid #0b71ab
+}
+
+.rws-widget input[type="text"].textfield.has-error {
+    border-color: #e60000
+}
+
+.rws-widget .textfield-wrapper {
+    position: relative
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .textfield-wrapper {
+    display: table;
+    display: table;
+    width: 100%
+}
+
+.rws-widget .textfield-wrapper-select,
+.rws-widget .textfield-wrapper-select .selectWrapper {
+    position: relative
+}
+
+.rws-widget .textfield-wrapper-date {
+    margin-right: 4px;
+    float: left
+}
+
+.rws-widget .textfield-wrapper-first {
+    width: 224px
+}
+
+.rwshindersearchpanel--extrasmall.rws-widget .textfield-wrapper-first {
+    display: table;
+    width: 100%;
+    margin-bottom: 8px;
+    display: table
+}
+
+.rws-widget .textfield-input-wrapper {
+    position: relative
+}
+
+.rws-widget .textfield-input-wrapper .loading-container {
+    right: 2px;
+    top: 8px;
+    bottom: auto;
+    width: 27px;
+    height: 36px;
+    position: absolute;
+    display: none
+}
+
+.rws-widget .textfield-input-wrapper .loading-container .loading-icon {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 3px;
+    top: 9px
+}
+
+.rws-widget .textfield-input-wrapper .loading-container.visible {
+    display: block
+}
+
+.rws-widget .textfield-input-wrapper .erasebutton {
+    position: absolute;
+    right: 1px;
+    top: 4px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 31px;
+    height: 44px;
+    background: 0 0;
+    color: #0b71ab;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center
+}
+
+.rws-widget .textfield-input-wrapper .erasebutton:focus {
+    outline: 1px dotted
+}
+
+.rws-widget .textfield-label {
+    font-weight: 700;
+    color: #222;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 20px 0 4px;
+    width: auto;
+    display: table-cell
+}
+
+.rwshindersearchpanel--small.rws-widget .textfield-label,
+.rwshindersearchpanel--medium.rws-widget .textfield-label,
+.rwshindersearchpanel--large.rws-widget .textfield-label {
+    display: block;
+    margin: 0 0 2px
+}
+
+.rws-widget .autocomplete-dropdown li {
+    padding: 8px 12px;
+    display: block;
+    width: auto;
+    border-top: 1px solid #efeeeb
+}
+
+.rws-widget .autocomplete-dropdown li.selected {
+    background-color: #0b71ab;
+    color: #FFF
+}
+
+.rws-widget .autocomplete-dropdown li label {
+    cursor: pointer;
+    white-space: normal
+}
+
+.rws-widget .autocomplete-dropdown li:hover {
+    background-color: #0b71ab;
+    color: #FFF;
+    cursor: pointer
+}
+
+.rws-widget .autocomplete-dropdown ul {
+    position: absolute;
+    z-index: 10;
+    float: left;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #efeeeb;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+}
+
+.rws-widget .autocomplete-dropdown ul>li:before {
+    display: none
+}
+
+.rws-widget input[type="text"]:invalid+button[type="reset"] {
+    display: none!important;
+    visibility: hidden!important
+}
+
+.rws-widget button[type="reset"] {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    bottom: 17px
+}
+
+.rws-widget button[type="reset"] span.icon-circled-cross,
+.rws-widget button[type="reset"] .map span.map-close-button,
+.rws-widget .map button[type="reset"] span.map-close-button {
+    color: #0b71ab
+}
+
+@media (max-width:414px) {
+    .rws-widget .enddatefield_wrapper .DateRangePicker {
+        left: -112px
+    }
+}
+
+@media (max-width:375px) {
+    .rws-widget .enddatefield_wrapper .DateRangePicker {
+        left: -132px
+    }
+}
+
+@media (max-width:320px) {
+    .rws-widget .enddatefield_wrapper .DateRangePicker {
+        left: -150px
+    }
+}
+
+.rws-widget .DateRangePicker {
+    display: inline-block;
+    user-select: none;
+    position: absolute;
+    z-index: 1001;
+    width: 380px;
+    padding: 5px 12px 12px;
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #efeeeb;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    left: 0
+}
+
+@media (max-width:479px) {
+    .rws-widget .DateRangePicker {
+        width: 290px
+    }
+}
+
+.enddatefield_wrapper .rws-widget .DateRangePicker {
+    left: auto;
+    right: 0
+}
+
+.rwshindersearchpanel--large.enddatefield_wrapper .rws-widget .DateRangePicker {
+    left: 0;
+    right: auto
+}
+
+.rws-widget .DateRangePicker__Legend {
+    color: #52575e;
+    font-size: 14px;
+    line-height: 16px;
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0
+}
+
+.rws-widget .DateRangePicker__LegendItem {
+    display: inline-block;
+    margin: 0 20px
+}
+
+.rws-widget .DateRangePicker__LegendItemColor {
+    border-radius: 50%;
+    display: inline-block;
+    height: 14px;
+    margin-right: 6px;
+    vertical-align: text-bottom;
+    width: 14px;
+    border: 1px solid rgba(0, 0, 0, .25)
+}
+
+.rws-widget .DateRangePicker__LegendItemColor--selection {
+    background-color: #ed5434
+}
+
+.rws-widget .DateRangePicker__PaginationArrow {
+    border: 0;
+    cursor: pointer;
+    display: block;
+    height: 35px;
+    outline: none;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 3px;
+    white-space: nowrap;
+    width: 35px;
+    z-index: 1
+}
+
+.rws-widget .DateRangePicker__PaginationArrow--previous {
+    left: 3px
+}
+
+.rws-widget .DateRangePicker__PaginationArrow--next {
+    right: 3px
+}
+
+.rws-widget .DateRangePicker__PaginationArrow--is-disabled {
+    display: none
+}
+
+.rws-widget .DateRangePicker__PaginationArrowIcon {
+    color: #0b71ab;
+    font-size: 0;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    line-height: 1
+}
+
+.rws-widget .DateRangePicker__PaginationArrowIcon--is-disabled {
+    display: none
+}
+
+.rws-widget .DateRangePicker__PaginationArrowIcon--previous:before,
+.rws-widget .DateRangePicker__PaginationArrowIcon--next:before {
+    font-size: 20px
+}
+
+.rws-widget .DateRangePicker__Month {
+    display: inline-block;
+    position: relative;
+    width: 100%
+}
+
+.rws-widget .DateRangePicker__Month+.rws-widget .DateRangePicker__Month {
+    display: none
+}
+
+.rws-widget .DateRangePicker__MonthHeader {
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    height: 38px;
+    line-height: 35px;
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid #EFEEEB;
+    text-transform: capitalize
+}
+
+.rws-widget .DateRangePicker__MonthHeaderLabel {
+    display: inline-block;
+    position: relative
+}
+
+.rws-widget .DateRangePicker__MonthHeaderSelect {
+    background: #e4e4e4;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 5
+}
+
+.rws-widget .DateRangePicker__MonthDates {
+    border-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0 1px;
+    margin: 0;
+    width: 100%
+}
+
+.rws-widget .DateRangePicker__WeekdayHeading {
+    background: #fff
+}
+
+.rws-widget .DateRangePicker__WeekdayHeading,
+.rws-widget .DateRangePicker__Date {
+    font-size: 12px;
+    line-height: 1;
+    padding: 10px 0;
+    text-align: center;
+    width: 14.285714285714286%;
+    border: 0
+}
+
+.rws-widget .DateRangePicker__WeekdayHeading {
+    border-bottom: 1px solid #f4f5f6;
+    color: #000;
+    font-weight: 700
+}
+
+.rws-widget .DateRangePicker__WeekdayHeading abbr[title] {
+    border-bottom-width: 0;
+    color: #000;
+    cursor: pointer;
+    font-size: inherit;
+    text-decoration: none
+}
+
+.rws-widget .DateRangePicker__Date {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    background: #fff
+}
+
+.rws-widget .DateRangePicker__Date--otherMonth {
+    opacity: .25
+}
+
+.rws-widget .DateRangePicker__Date--is-disabled {
+    color: #cdcdd1;
+    cursor: default
+}
+
+.rws-widget .DateRangePicker__Date--is-selected,
+.rws-widget .DateRangePicker__Date--is-highlighted {
+    color: #333
+}
+
+.rws-widget .DateRangePicker__Date--today {
+    color: #154273;
+    font-weight: 700
+}
+
+.rws-widget .DateRangePicker__Date--today--is-disabled {
+    color: #cdcdd1
+}
+
+.rws-widget .DateRangePicker__CalendarDatePeriod {
+    bottom: 0;
+    position: absolute;
+    top: 0
+}
+
+.rws-widget .DateRangePicker__CalendarDatePeriod--am {
+    left: 0;
+    right: 50%
+}
+
+.rws-widget .DateRangePicker__CalendarDatePeriod--pm {
+    left: 50%;
+    right: 0
+}
+
+.rws-widget .DateRangePicker__CalendarSelection {
+    background-color: #e8e7e5;
+    border: 0;
+    bottom: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 2px
+}
+
+.rws-widget .DateRangePicker__CalendarSelection--inOtherMonth {
+    opacity: .5
+}
+
+.rws-widget .DateRangePicker__CalendarSelection--start {
+    border-radius: 0;
+    left: 2px;
+    border: 2px solid #0b71ab;
+    background: #fff;
+    font-weight: 700
+}
+
+.rws-widget .DateRangePicker__CalendarSelection--end {
+    border-radius: 0;
+    right: 2px;
+    border: 2px solid #0b71ab;
+    background: #fff;
+    font-weight: 700
+}
+
+.rws-widget .DateRangePicker__CalendarSelection--segment {
+    border-left-width: 0;
+    border-right-width: 0
+}
+
+.rws-widget .DateRangePicker__CalendarSelection--single {
+    border-radius: 5px;
+    left: 2px;
+    right: 2px
+}
+
+.rws-widget .DateRangePicker__CalendarHighlight {
+    background-color: rgba(255, 255, 255, .25);
+    border: 1px solid rgba(0, 0, 0, .25);
+    bottom: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 2px
+}
+
+.rws-widget .DateRangePicker__CalendarHighlight--inOtherMonth {
+    opacity: .5
+}
+
+.rws-widget .DateRangePicker__CalendarHighlight--start {
+    border-bottom-left-radius: 5px;
+    border-right-width: 0;
+    border-top-left-radius: 5px;
+    left: 2px
+}
+
+.rws-widget .DateRangePicker__CalendarHighlight--end {
+    border-bottom-right-radius: 5px;
+    border-left-width: 0;
+    border-top-right-radius: 5px;
+    right: 2px
+}
+
+.rws-widget .DateRangePicker__CalendarHighlight--segment {
+    border-left-width: 0;
+    border-right-width: 0
+}
+
+.rws-widget .DateRangePicker__CalendarHighlight--single {
+    background-color: #fff;
+    border: 1px solid #0b71ab;
+    border-radius: 0;
+    left: 2px;
+    right: 2px
+}
+
+.rws-widget .DateRangePicker__HalfDateStates {
+    bottom: -50px;
+    left: -50px;
+    position: absolute;
+    right: -50px;
+    top: -50px;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg)
+}
+
+.rws-widget .DateRangePicker__FullDateStates {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.rws-widget .DateRangePicker__DateLabel {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1
+}
+
+.rws-widget .hinderwidget .filter-form__container {
+    background-color: #f7f6f4
+}
+
+.rws-widget .hinderwidget .filter-nav__item {
+    background: #fff
+}
+
+.rws-widget .hinderwidget .filter-nav__item--is-active {
+    background: #0b71ab
+}
+
+.rws-widget .hinderwidget .datepicker-container {
+    display: table-cell;
+    vertical-align: top
+}
+
+.rws-widget .hinderwidget .datepicker-container .date-field-wrapper input,
+.rws-widget .hinderwidget label {
+    font-size: 14px
+}
+
+.rws-widget .hinderwidget .textfield-wrapper-select {
+    padding-top: 0
+}
+
+.rws-widget .rwshindersearchpanel--large.rws-widget .filter-form__from-to-wrapper__submit {
+    position: relative;
+    float: right;
+    margin-top: -42px;
+    bottom: auto;
+    right: auto
+}
+
+.rws-widget .btn--yellow:before {
+    background: 0 0
+}
