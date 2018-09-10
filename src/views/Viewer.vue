@@ -68,7 +68,7 @@ export default {
       const selectedLayers = this.parsedLayers
         .filter(({ id }) => this.selectedLayerId === id)
 
-      if  (selectedLayers && selectedLayers[0]) {
+      if (selectedLayers && selectedLayers[0]) {
         return selectedLayers[0] // should only be one
       }
     },

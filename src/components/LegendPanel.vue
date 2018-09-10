@@ -14,7 +14,7 @@ import mapConfig from '../map.config'
 export default {
   computed: {
     legendImageSrc () {
-      const { layerName, namespace, styleName} = this
+      const { layerName, namespace, styleName } = this
       const url = mapConfig.services.LEGEND_URL
       return `${url}/${namespace}/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&LAYER=${layerName}&STYLE=${styleName}&HEIGHT=16&WIDTH=84`
     }
