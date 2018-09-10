@@ -3,8 +3,13 @@
     <template
       v-for="layer in expandedMapLayers"
     >
+      <dike-ring-layer 
+        v-if="isDikeRingLayer(layer)"
+        :key="layer.layer"
+        :layer="layer" 
+      />
       <l-geo-json
-        v-if="layer.type === 'json'"
+        v-else-if="layer.type === 'json'"
         :ref="layer.layer"
         :key="layer.layer"
         :geojson="layer.geojson"
@@ -29,11 +34,15 @@
 import { LGeoJson, LWMSTileLayer as LWmsTileLayer } from 'vue2-leaflet'
 
 import BreachTooltip from './BreachTooltip'
+import DikeRingLayer from './DikeRingLayer'
 import DikeRingTooltip from './DikeRingTooltip'
 
 import mapConfig from '../map.config.js'
 import loadGeojson from '../lib/load-geojson'
 import renderVue from '../lib/render-vue'
+
+const BREACH_IDENTIFIER = 'geo_doorbraaklocaties_primair'
+const DIKE_RING_IDENTIFIER = 'geo_dijkringen'
 
 const MARKER_IDENTIFIER = 'Point'
 
@@ -54,6 +63,9 @@ export default {
     mapRef: Object
   },
   methods: {
+    isDikeRingLayer ({ layer, type }) {
+      return layer.type === 'json' && ( type === DIKE_RING_IDENTIFIER || type === BREACH_IDENTIFIER )
+    },
     geoServerURL (namespace) {
       return namespace === 'LIWO_Operationeel'
         ? DYNAMIC_GEOSERVER_URL
@@ -140,11 +152,13 @@ export default {
           : layer
       }))
         .then(layers => {
+          console.log('LAYERS', layers)
           this.expandedMapLayers = layers
         })
     }
   },
   components: {
+    DikeRingLayer,
     LGeoJson,
     LWmsTileLayer
   }
