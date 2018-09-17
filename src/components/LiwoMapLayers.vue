@@ -3,10 +3,10 @@
     <template
       v-for="layer in expandedMapLayers"
     >
-      <dike-ring-layer 
+      <dike-ring-layer
         v-if="isDikeRingLayer(layer)"
         :key="layer.layer"
-        :layer="layer" 
+        :layer="layer"
       />
       <l-geo-json
         v-else-if="layer.type === 'json'"
@@ -64,7 +64,7 @@ export default {
   },
   methods: {
     isDikeRingLayer ({ layer, type }) {
-      return layer.type === 'json' && ( type === DIKE_RING_IDENTIFIER || type === BREACH_IDENTIFIER )
+      return layer.type === 'json' && (type === DIKE_RING_IDENTIFIER || type === BREACH_IDENTIFIER)
     },
     geoServerURL (namespace) {
       return namespace === 'LIWO_Operationeel'
