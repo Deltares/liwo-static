@@ -14,6 +14,7 @@
 import { mapState, mapGetters } from 'vuex'
 
 import createMapConfig from '@/lib/leaflet-utils/mapconfig-factory'
+import { showLayerInfoPopup } from '@/lib/leaflet-utils/popup'
 
 export default {
   data () {
@@ -24,10 +25,12 @@ export default {
   computed: {
     ...mapState([
       'opacityByLayerId',
-      'selectedBreaches'
+      'selectedBreaches',
+      'layerUnits'
     ]),
     ...mapGetters([
-      'parsedLayerSet'
+      'parsedLayerSet',
+      'activeLayerSet'
     ])
   },
   created () {
@@ -44,6 +47,16 @@ export default {
     },
     initMapObject (mapObject) {
       this.$emit('initMap', mapObject)
+
+      mapObject.on('click', event => {
+        showLayerInfoPopup({
+          map: mapObject,
+          activeLayer: this.activeLayerSet[0],
+          unit: this.layerUnits[this.activeLayerSet[0].layerId],
+          position: event.containerPoint,
+          latlng: event.latlng
+        })
+      })
     }
   },
   watch: {

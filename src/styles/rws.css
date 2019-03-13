@@ -1691,8 +1691,7 @@ textarea.block {
 }
 
 select {
-    padding-top: .5em;
-    height: 2.5em
+    height: 2em
 }
 
 select.select-month,

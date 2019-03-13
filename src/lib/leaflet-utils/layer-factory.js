@@ -23,11 +23,19 @@ const STATIC_GEOSERVER_URL = mapConfig.services.STATIC_GEOSERVER_URL
 export default function createLayer (layer, { breachCallBack }) {
   if (layer.type === 'json' && layer.geojson) {
     if (layerIsBreach(layer)) {
-      const markers = L.markerClusterGroup({
-        iconCreateFunction: clusterIconFunction(layer.layer || 'BREACH_PRIMARY')
+      const layerGroup = L.layerGroup()
+      const clusterGroup = L.markerClusterGroup({
+        iconCreateFunction: clusterIconFunction(layer.layer || 'BREACH_PRIMARY'),
+         maxClusterRadius: 40
       })
-      markers.addLayer(createBreachGeoJson(layer, breachCallBack))
-      return markers
+
+      clusterGroup.addLayer(createBreachGeoJson(layer, breachCallBack, clusterGroup, layerGroup))
+
+      layerGroup.addLayer(clusterGroup)
+
+      layerGroup.layerId = layer.layerId
+
+      return layerGroup
     } else {
       return createGeoJson(layer)
     }
@@ -44,13 +52,24 @@ export function createGeoJson ({ geojson, style }) {
   })
 }
 
-export function createBreachGeoJson ({ geojson, layer: layerId, opacity }, callback) {
+export function createBreachGeoJson ({ geojson, layer: layerId, opacity }, callback, clusterGroup, layerGroup) {
   return L.geoJson(geojson, {
     onEachFeature: (_, layer) => {
       const { naam } = layer.feature.properties
 
       layer.bindTooltip(`${naam}`)
-      layer.on('click', (event) => breachClickHandler(event, callback))
+      layer.on('click', (event) => {
+        if (clusterGroup.hasLayer(event.target)) {
+          event.target.setZIndexOffset(100)
+          clusterGroup.removeLayer(event.target)
+          layerGroup.addLayer(event.target)
+        } else {
+          event.target.setZIndexOffset(0)
+          layerGroup.removeLayer(event.target)
+          clusterGroup.addLayer(event.target)
+        }
+        breachClickHandler(event, callback)
+      })
       layer.on('mouseover', (event) => { event.target.openTooltip() })
       layer.on('mouseout', (event) => { event.target.closeTooltip() })
 

@@ -47,6 +47,10 @@ export function loadLayersets () {
     .catch(() => ([]))
 }
 
+export function extractUnit (title) {
+  return title.split('[').pop().split(']')[0]
+}
+
 export default {
   loadLayersetById,
   loadLayersets

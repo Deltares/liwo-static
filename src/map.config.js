@@ -72,6 +72,11 @@ const tileLayers = [
     title: 'Satelietbeeld',
     url: 'https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/tms/1.0.0/2016_ortho25/EPSG:28992/{z}/{x}/{y}.png',
     tms: true
+  },
+  {
+    title: 'Geen Achtergrondkaart',
+    url: '',
+    tms: true
   }
 ]
 

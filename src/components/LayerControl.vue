@@ -24,9 +24,6 @@
         <p class="layer-control__title">
           {{ title }}
         </p>
-        <p class="layer-control__subtitle">
-          {{ subtitle }}
-        </p>
       </div>
     </form>
     <div v-if="isBreachControlLayer" class="layer-control__options">
@@ -73,7 +70,6 @@ export default {
   props: {
     id: [String, Number],
     title: String,
-    subtitle: String,
     metadata: Object,
     active: Boolean,
     variants: Array,
@@ -168,16 +164,9 @@ export default {
     display: inline-block;
   }
 
-  .layer-control__title,
-  .layer-control__subtitle {
+  .layer-control__title {
     margin: 0;
     padding: 0;
-  }
-
-  .layer-control__subtitle {
-    color: var(--medium-gray);
-    font-size: 0.7em;
-    line-height: 0.9em;
   }
 
   .layer-control__main,
@@ -185,12 +174,17 @@ export default {
     position: relative;
     display: block;
     padding: .5rem .5rem .25rem 2.5rem;
-    min-height: 3rem;
   }
+
+  .layer-control__main {
+    margin-bottom: 0;
+  }
+
   .layer-control__vis-label>.icon {
     position: absolute;
     left: .5rem;
   }
+
   .layer-control__options {
     display: none;
     border-top: 1px solid var(--white);

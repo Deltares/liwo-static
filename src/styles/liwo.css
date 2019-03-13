@@ -1,3 +1,7 @@
+.viewer .leaflet-container {
+  background-color: transparent;
+}
+
 .site-nav-title {
   background: #fdf6bb none repeat scroll 0 0;
   font-size: 2.2em;

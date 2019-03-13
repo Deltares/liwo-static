@@ -9,7 +9,6 @@
         :active="(layer.id === selectedLayerId)"
         :id="layer.id"
         :title="layer.properties.title || layer.properties.name"
-        :subtitle="layer.properties.title || layer.legend.title"
         :metadata="layerMetaData(layer)"
         :variants="layer.variants || []"
         :layerType="layer.legend.layer"
