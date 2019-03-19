@@ -7,6 +7,8 @@ import loadGeojson from './lib/load-geojson'
 import { normalizeLayers } from './lib/layer-parser'
 import { probabilityConfig } from './lib/probability-filter'
 import { BREACH_SELECTED } from './lib/liwo-identifiers'
+import mapConfig from './map.config'
+const apiBase = mapConfig.services.WEBSERVICE_URL
 
 Vue.use(Vuex)
 
@@ -182,15 +184,25 @@ export default new Vuex.Store({
       commit('toggleSelectedBreach', id)
     },
     async setActiveLayersFromVariantIds ({ commit, getters }, ids) {
+      const headers = { 'Accept': 'application/json', 'Content-Type': 'application/json' }
+
+      console.log('WORK')
+
+      fetch(`${apiBase}/Tools/FloodImage.asmx/GetBreachLocationId?mapid=${ids[0]}`, {
+        mode: 'cors',
+        headers,
+      })
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
       // await Promise.all(ids.map(id =>
       //   // TODO: add url with the right endpoint
-      //   fetch('url' + id)
-      //     .then(res => res.json())
-      //     .then(data => data.id)
+      //
       // ))
       //   .then(ids => {
-      //     ids.forEach(id => commit('toggleSelectedBreach', id))
-      //   })
+      //     console.log(ids)
+      //     // ids.forEach(id => commit('toggleSelectedBreach', id))
+      //   }))
     }
   },
   getters: {
