@@ -58,6 +58,10 @@ export default {
     panelLayerId: {
       type: [String, Number],
       default: ''
+    },
+    isBreachLocation: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -71,7 +75,8 @@ export default {
       'visibleLayerIds',
       'visibleVariantIndexByLayerId',
       'hidden',
-      'hiddenLayers'
+      'hiddenLayers',
+      'visibleLayerIds'
     ]),
     activeMarkerLayerIsVisible () {
       return !this.hiddenLayers.includes(this.panelLayerId)
@@ -97,7 +102,14 @@ export default {
       })
     },
     toggleLayerVisibilityById (id) {
-      this.$store.commit('toggleLayerById', id)
+      this.layers.forEach(layer => {
+        if (this.visibleLayerIds.includes(layer.id) && layer.id !== id) {
+          this.$store.commit('toggleLayerById', layer.id)
+        } else if (layer.id === id) {
+          this.$store.commit('toggleLayerById', id)
+        }
+      })
+
     },
     setVisibleVariant ({ layerId, variantIndex }) {
       this.$store.commit('setVisibleVariantIndexForLayerId', { layerId, index: variantIndex })
