@@ -18,3 +18,6 @@ var PRINT_GEOSERVER_URL = 'http://tl-396.xtr.deltares.nl:8080/print/' // url for
 var PDOKLUCHTFOTO = 'http://geodata.nationaalgeoregister.nl/luchtfoto/rgb/wms'
 var PDOKBRTACHTERGROND = 'http://geodata.nationaalgeoregister.nl/tiles/service/wmts'
 var MANUAL_URL = 'https://www.helpdeskwater.nl/onderwerpen/applicaties-modellen/applicaties-per/watermanagement/watermanagement/liwo'
+
+// URL for combining scenario's
+var HYDRO_ENGINE_URL = 'https://hydro-engine.appspot.com'
