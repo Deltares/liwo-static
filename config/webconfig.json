@@ -3,6 +3,7 @@
   "_comment1": "url's for webservice calls",
   "WEBSERVICE_URL": "http://tw-160.xtr.deltares.nl/liwo.ws",
   "STATIC_GEOSERVER_URL": "http://tl-396.xtr.deltares.nl:8080/geoserver/ows",
+  "LEGEND_URL": "http://tl-396.xtr.deltares.nl:8080/geoserver/ows",
   "DYNAMIC_GEOSERVER_URL": "http://tl-397.xtr.deltares.nl:8080/geoserver/ows",
   "ACHTERGRONDKAART": "https://geodata.nationaalgeoregister.nl/tms/1.0.0/brtachtergrondkaart/{z}/{x}/{y}.png",
   "LUCHTFOTOKAART": "https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/tms/1.0.0/2016_ortho25/EPSG:28992/{z}/{x}/{y}.png",
