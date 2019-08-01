@@ -1,0 +1,20 @@
+{
+  "_comment0": "This file will be overwritten automatically by a puppet script in the deployment process, DO NOT EDIT BY HAND, DO NOT MINIFY",
+  "_comment1": "url's for webservice calls",
+  "WEBSERVICE_URL": "http://tw-160.xtr.deltares.nl/liwo.ws",
+  "STATIC_GEOSERVER_URL": "http://tl-396.xtr.deltares.nl:8080/geoserver/ows",
+  "DYNAMIC_GEOSERVER_URL": "http://tl-397.xtr.deltares.nl:8080/geoserver/ows",
+  "ACHTERGRONDKAART": "https://geodata.nationaalgeoregister.nl/tms/1.0.0/brtachtergrondkaart/{z}/{x}/{y}.png",
+  "LUCHTFOTOKAART": "https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/tms/1.0.0/2016_ortho25/EPSG:28992/{z}/{x}/{y}.png",
+  "_comment2": "url for internal routing to static geoserver",
+  "STATIC_GEOSERVER_LOCAL": "http://tl-396.xtr.deltares.nl:8080/geoserver/ows",
+  "_comment3": "// url for internal routing to dynamic geoserver",
+  "DYNAMIC_GEOSERVER_LOCAL": "http://tl-397.xtr.deltares.nl:8080/geoserver/ows",
+  "_comment4": "// url for print geoserver [ending with a forward slash]",
+  "PRINT_GEOSERVER_URL": "http://tl-396.xtr.deltares.nl:8080/print/",
+  "PDOKLUCHTFOTO": "http://geodata.nationaalgeoregister.nl/luchtfoto/rgb/wms",
+  "PDOKBRTACHTERGROND": "http://geodata.nationaalgeoregister.nl/tiles/service/wmts",
+  "MANUAL_URL": "https://www.helpdeskwater.nl/onderwerpen/applicaties-modellen/applicaties-per/watermanagement/watermanagement/liwo",
+  "_comment5": "// URL for combining scenario's",
+  "HYDRO_ENGINE_URL": "https://hydro-engine.appspot.com"
+}
