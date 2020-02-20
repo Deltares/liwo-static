@@ -171,9 +171,12 @@ export async function getFeatureIdByScenarioId (scenarioId) {
   // TODO: store scenario info in the features...
 
   let services = await mapConfig.getServices()
+
+  // get mapId from scenarioId
   let promise = fetch(`${services.WEBSERVICE_URL}/Maps.asmx/GetBreachLocationId`, {
     method: 'POST',
     headers,
+    // TODO: this is wrong,  we pass a scenarioId to a map Id. This API returns  the breach based on the mapId
     body: JSON.stringify({ mapid: scenarioId })
   })
     .then(res => res.json())
@@ -188,6 +191,8 @@ export async function getFeatureIdByScenarioId (scenarioId) {
 
 export async function getFeatureIdsByScenarioIds (scenarioIds) {
   // This is very ackward logic to get back the list of feature ids that corresponds to a list of scenario's
+
+
   let promises = scenarioIds.map(getFeatureIdByScenarioId)
   let responses = await Promise.all(promises)
   let results = {}
