@@ -17,5 +17,5 @@
   "PDOKBRTACHTERGROND": "http://geodata.nationaalgeoregister.nl/tiles/service/wmts",
   "MANUAL_URL": "https://www.helpdeskwater.nl/onderwerpen/applicaties-modellen/applicaties-per/watermanagement/watermanagement/liwo",
   "_comment5": "// URL for combining scenario's",
-  "HYDRO_ENGINE_URL": "https://hydro-engine.appspot.com"
+  "HYDRO_ENGINE_URL": "https://green-dot-hydro-engine.appspot.com/v2"
 }
