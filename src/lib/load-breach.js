@@ -192,7 +192,6 @@ export async function getFeatureIdByScenarioId (scenarioId) {
 export async function getFeatureIdsByScenarioIds (scenarioIds) {
   // This is very ackward logic to get back the list of feature ids that corresponds to a list of scenario's
 
-
   let promises = scenarioIds.map(getFeatureIdByScenarioId)
   let responses = await Promise.all(promises)
   let results = {}
