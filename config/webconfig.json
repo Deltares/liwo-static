@@ -17,5 +17,11 @@
   "PDOKBRTACHTERGROND": "http://geodata.nationaalgeoregister.nl/tiles/service/wmts",
   "MANUAL_URL": "https://www.helpdeskwater.nl/onderwerpen/applicaties-modellen/applicaties-per/watermanagement/watermanagement/liwo",
   "_comment5": "// URL for combining scenario's",
-  "HYDRO_ENGINE_URL": "https://green-dot-hydro-engine.appspot.com/v2"
+  "HYDRO_ENGINE_URL": "https://green-dot-hydro-engine.appspot.com/v2",
+  "_comment6": "// application version (whole set)",
+  "VERSION": "2020.1.1",
+  "_comment7": "// dataset version (GEE)",
+  "DATASET_VERSION": "projects/deltares-rws/liwo/production/2020.1.1",
+  "_comment8": "// backend version",
+  "BACKEND_VERSION": "LWB/trunk@2696"
 }
