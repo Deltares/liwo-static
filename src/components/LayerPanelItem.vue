@@ -3,9 +3,9 @@
   <h3
     class="layerpanel-item__title"
     @click="selectFirstLayer"
-    >
+  >
     <span>{{ title }}</span>
-    <button class="layerpanel-item__collapse" @click.stop="toggleCollapse">
+    <button class="layerpanel-item__collapse" @click.stop="toggleCollapse" :aria-expanded="!collapsed">
       <img class="layerpanel-item__collapse-icon" :src="`${publicPath}icons/baseline-keyboard_arrow_up-24px.svg`" />
     </button>
   </h3>
@@ -14,8 +14,8 @@
     @update:layers="updateLayers"
     @select:layer="selectLayer"
     @select:variant="selectVariant"
-    v-show="!isCollapsed"
-    >
+    :hidden="isCollapsed"
+  >
     <slot></slot>
   </layer-control-list>
 
